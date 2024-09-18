@@ -1,0 +1,66 @@
+<html>
+  
+  <head>
+    
+    <title>css grid</title>
+  
+  </head>
+  
+  <body>
+    
+    <div class="grid-container">
+      <div class="grid-item-1 grid-item">div1</div>
+      <div class="grid-item-2 grid-item">div2</div>
+      
+    </div>
+    
+    body, html{
+    <style>
+       .grid-container {
+        /* we define a grid container */
+        display: grid;
+        height:100vh; 
+        
+        /*we define rows and columns, they define a track based on the number of values given and the value of those values */
+        /* here we define 6 horizontal rows 100px in length*/
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        /* here we define 6 vertical columns 100px in length*/
+        grid-template-columns: 20% 20% 20% 20% 20%;
+      }
+      
+      .grid-item-1 {
+        /*we define where we want our first item to span in the grid*/
+        background-color: blue;
+         grid-row-start: 1;
+         grid-row-end: 2;
+          grid-column-start: 1;
+          grid-column-end: 6;
+          color: white;          
+           display: flex;
+          justify-content: center;
+         align-items: center;
+
+      }
+      
+      .grid-item-2 {
+       background-color: green;
+       grid-row-start: 3;
+       grid-row-end: 6;
+       grid-column-start: 4;
+       grid-column-end: 6;
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+
+      }
+      
+    
+    
+    </style>
+  
+  </body>
+
+</html>
+      

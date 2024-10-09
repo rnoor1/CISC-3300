@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
+</head>
+<body>
+    
+    <script>
+        console.log('hey')
+    
+    $.get({
+            url: 'http://localhost:3000/recipes',
+            success: function (data) {
+            console.log(data);
+            }
+        });
+        
+    
+    </script>
+</body>
+</html>

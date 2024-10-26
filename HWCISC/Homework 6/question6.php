@@ -20,6 +20,6 @@ function exampleFunction(int $number, string $text = "Default") {
     return "$text: $number";
 }
 
-// Call the function with correct values
+
 echo exampleFunction(10, "Number is");
 ?>

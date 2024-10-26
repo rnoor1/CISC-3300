@@ -1,25 +1,21 @@
 <?php
-
-$array = [
-    "Name" => "Mary carman",
-    "Age" => 25,
-    "Occupation" => "Developer",
-    "Country" => "USA"
+// a. Associative array
+$associativeArray = [
+    "name" => "John",
+    "age" => 30,
+    "city" => "New York"
 ];
 
-
-foreach ($array as $key => $value) {
-    echo "$key: $value<br>";
+// b. Loop through the array
+foreach ($associativeArray as $key => $value) {
+    echo "Key: $key, Value: $value<br>";
 }
 
-
-function greetUser(string $name, string $greeting = "Hello"): string {
-    return "$greeting, $name!";
+// 7. a. Create a function
+function exampleFunction(int $number, string $text = "Default") {
+    return "$text: $number";
 }
 
 // Call the function
-echo greetUser("Mary");
-echo "<br>";
-echo greetUser("Jane", "Hi");
+echo exampleFunction(10, "Number is");
 ?>
-

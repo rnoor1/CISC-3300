@@ -1,24 +1,25 @@
 <?php
+// Display errors for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$array = [
-    "Name" => "Mary Carman",
-    "Age" => 25,
-    "Occupation" => "Developer",
-    "Country" => "USA"
+// a. Associative array
+$associativeArray = [
+    "name" => "John",
+    "age" => 30,
+    "city" => "New York"
 ];
 
-
-foreach ($array as $key => $value) {
-    echo "$key: $value<br>";
+// b. Loop through the array and echo out each key and value
+foreach ($associativeArray as $key => $value) {
+    echo "Key: $key, Value: $value<br>";
 }
 
-
-function greetUser(string $name, string $greeting = "Hello"): string {
-    return "$greeting, $name!";
+// 7. a. Create a function with set return type, optional and typed parameter
+function exampleFunction(int $number, string $text = "Default") {
+    return "$text: $number";
 }
 
-
-echo greetUser("Mary");
-echo "<br>";
-echo greetUser("Jane", "Hi");
+// Call the function with correct values
+echo exampleFunction(10, "Number is");
 ?>

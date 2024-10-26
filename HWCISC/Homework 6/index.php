@@ -1,10 +1,10 @@
 <?php
+require 'requireMe.php'; // Require the file
 
-require 'requireMe.php';
-
-
+// Echo the required variable
 echo $requiredVariable;
 
-
-require 'views/Homework 6';
+// Include homework-6.html
+require 'views/homework.html';
 ?>
+

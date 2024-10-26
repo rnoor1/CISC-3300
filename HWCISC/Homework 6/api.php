@@ -1,14 +1,13 @@
 <?php
-
-$array = [
-    "Name" => "Mary Carman",
-    "Age" => 25,
-    "Occupation" => "Developer",
-    "Country" => "USA"
+// Another associative array
+$apiArray = [
+    "product" => "Laptop",
+    "price" => 1200,
+    "brand" => "BrandX"
 ];
 
-
-header('Content-Type: application/json');
-echo json_encode($array);
+// Echo the array as JSON
+echo json_encode($apiArray);
 ?>
+
 

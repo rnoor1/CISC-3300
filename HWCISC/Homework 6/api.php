@@ -1,12 +1,12 @@
 <?php
-// Another associative array
+
 $apiArray = [
-    "product" => "Laptop",
-    "price" => 1200,
-    "brand" => "BrandX"
+    "product" => "iphone",
+    "price" => 900,
+    "brand" => "apple"
 ];
 
-// Echo the array as JSON
+
 echo json_encode($apiArray);
 ?>
 
